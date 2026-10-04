@@ -113,4 +113,52 @@
 
   /* start the show */
   typeTagline();
+
+  /* ---------- promo modal ---------- */
+  var promo = document.getElementById("promo-mask");
+  var promoClose = document.getElementById("promo-close");
+  var promoShown = (function () {
+    try {
+      return !!sessionStorage.getItem("hzdavy_promo");
+    } catch (e) {
+      return false;
+    }
+  })();
+
+  function openPromo() {
+    if (!promo || promoShown || promo.hasAttribute("open")) return;
+    promo.setAttribute("open", "");
+    try {
+      sessionStorage.setItem("hzdavy_promo", "1");
+    } catch (e) {}
+    promo.hidden = false;
+    requestAnimationFrame(function () {
+      promo.classList.add("is-in");
+    });
+    var target = promo.querySelector(".promo-cta") || promoClose;
+    if (target) target.focus();
+  }
+
+  function closePromo() {
+    if (!promo || promo.hidden) return;
+    promo.classList.remove("is-in");
+    var p = promo;
+    setTimeout(function () {
+      p.hidden = true;
+      p.removeAttribute("open");
+    }, prefersReduced ? 0 : 320);
+  }
+
+  if (promo) {
+    if (!promoShown && !prefersReduced) setTimeout(openPromo, 1200);
+    else if (!promoShown) setTimeout(openPromo, 300);
+
+    promoClose.addEventListener("click", closePromo);
+    promo.addEventListener("click", function (e) {
+      if (e.target === promo) closePromo();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && promo && !promo.hidden) closePromo();
+    });
+  }
 })();
