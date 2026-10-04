@@ -56,7 +56,6 @@
       round++;
       if (round >= len) {
         clearInterval(timer);
-        target.textContent = "";
         cb();
       }
     }, 24);
@@ -68,7 +67,7 @@
     decryptBtn.disabled = true;
     decryptLabel.textContent = "";
     decrypt(decryptLabel, MYSTERY, function () {
-      decryptBtn.innerHTML = "";
+      decryptBtn.classList.add("is-revealed");
       decryptBtn.setAttribute("aria-label", "已解开");
     });
   });
