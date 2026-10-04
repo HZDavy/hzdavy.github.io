@@ -7,19 +7,16 @@
 
   /* ---------- typewriter tagline ---------- */
   var TAGLINE = "造一些安静的、未完成的事物。";
-  var taglineEl = document.getElementById("tagline");
-  var caret = taglineEl.querySelector(".caret");
+  var typeEl = document.getElementById("type");
 
   function typeTagline() {
-    var i = 0;
-    taglineEl.textContent = "";
-    taglineEl.appendChild(caret);
     if (prefersReduced) {
-      taglineEl.childNodes[0].textContent = TAGLINE;
+      typeEl.textContent = TAGLINE;
       return;
     }
+    var i = 0;
     (function step() {
-      taglineEl.childNodes[0].textContent = TAGLINE.slice(0, i);
+      typeEl.textContent = TAGLINE.slice(0, i);
       i++;
       if (i <= TAGLINE.length) setTimeout(step, 42);
     })();
