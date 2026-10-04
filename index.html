@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HZDavy — 边缘手记</title>
+  <meta name="description" content="HZDavy — 造一些安静的、未完成的事物。代码、文字与两者之间的缝隙。" />
+  <meta name="theme-color" content="#f2efe8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+
+  <header class="masthead">
+    <a class="brand" href="#main">HZDavy<span class="dot" aria-hidden="true"></span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#notes">手记</a>
+      <a href="#signals">信号</a>
+      <a href="#channels">信道</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow mono" data-reveal>davy//tlog — index 01</p>
+      <h1 class="hero-title serif" id="hero-title" data-reveal>
+        HZDavy
+      </h1>
+      <p class="hero-line serif" id="tagline" data-reveal>
+        <span class="caret" aria-hidden="true"></span>
+      </p>
+      <button class="decrypt mono" id="decrypt" type="button" data-reveal>
+        <span id="decrypt-label">解开余下的</span>
+        <span aria-hidden="true">_</span>
+      </button>
+      <a class="scroll-hint mono" href="#notes" data-reveal>↓ 往下</a>
+    </section>
+
+    <section id="notes" class="section" aria-labelledby="notes-title">
+      <h2 class="section-label mono" data-reveal>手记 / FIELD NOTES</h2>
+      <p class="lede serif" data-reveal>
+        我习惯把事情做到一半，再回过头把它们推翻。
+      </p>
+      <div class="note-lines serif">
+        <p data-reveal>代码是语言，文字是工具，作品是被留下的脚印。</p>
+        <p data-reveal>这个页面，是那座冰山露出水面的一角。</p>
+      </div>
+    </section>
+
+    <section id="signals" class="section" aria-labelledby="signals-title">
+      <h2 class="section-label mono" data-reveal>信号 / SIGNALS</h2>
+      <ul class="signals">
+        <li data-reveal>
+          <span class="sig">01</span>
+          <span class="sig-name">藏在抽屉里的项目</span>
+          <span class="sig-state mono">开稿 · 待续</span>
+        </li>
+        <li data-reveal>
+          <span class="sig">02</span>
+          <span class="sig-name">被推翻的草图</span>
+          <span class="sig-state mono">存档 · 不予展出</span>
+        </li>
+        <li data-reveal>
+          <span class="sig">03</span>
+          <span class="sig-name">两行脚注之间</span>
+          <span class="sig-state mono">正在进行 · 静默</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="channels" class="section" aria-labelledby="channels-title">
+      <h2 class="section-label mono" data-reveal>信道 / CHANNELS</h2>
+      <ul class="channels">
+        <li data-reveal>
+          <a href="https://github.com/HZDavy" target="_blank" rel="noopener">
+            <span class="mono sig">GitHub</span>
+            <span class="ch-uri mono">@HZDavy ↗</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a href="mailto:hzdavy@example.com">
+            <span class="mono sig">Email</span>
+            <span class="ch-uri mono">hzdavy@example.com</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p class="mono" id="clock" aria-live="off">— : — : —</p>
+    <p class="mono">无追踪 · 只有墨迹</p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

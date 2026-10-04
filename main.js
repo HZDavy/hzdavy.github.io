@@ -1,0 +1,119 @@
+(function () {
+  "use strict";
+
+  var prefersReduced =
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- typewriter tagline ---------- */
+  var TAGLINE = "造一些安静的、未完成的事物。";
+  var taglineEl = document.getElementById("tagline");
+  var caret = taglineEl.querySelector(".caret");
+
+  function typeTagline() {
+    var i = 0;
+    taglineEl.textContent = "";
+    taglineEl.appendChild(caret);
+    if (prefersReduced) {
+      taglineEl.childNodes[0].textContent = TAGLINE;
+      return;
+    }
+    (function step() {
+      taglineEl.childNodes[0].textContent = TAGLINE.slice(0, i);
+      i++;
+      if (i <= TAGLINE.length) setTimeout(step, 42);
+    })();
+  }
+
+  /* ---------- decrypt reveal ---------- */
+  var MYSTERY = "至于被藏起来的那些，连我自己也不知道答案。";
+  var decryptBtn = document.getElementById("decrypt");
+  var decryptLabel = document.getElementById("decrypt-label");
+  var used = false;
+
+  function decrypt(target, text, cb) {
+    if (prefersReduced) {
+      target.textContent = text;
+      cb();
+      return;
+    }
+    var glyphs = "造事在代码文字与缝隙之间_?·";
+    var len = text.length;
+    var round = 0;
+    var resolved = 0;
+    var timer = setInterval(function () {
+      var out = "";
+      for (var i = 0; i < len; i++) {
+        if (
+          i <= round ||
+          text.charAt(i) === " " ||
+          text.charAt(i) === "。" ||
+          text.charAt(i) === "，"
+        ) {
+          out += text.charAt(i);
+        } else {
+          out += glyphs.charAt(Math.floor(Math.random() * glyphs.length));
+        }
+      }
+      target.textContent = out;
+      round++;
+      if (round >= len) {
+        clearInterval(timer);
+        target.textContent = "";
+        cb();
+      }
+    }, 24);
+  }
+
+  decryptBtn.addEventListener("click", function () {
+    if (used) return;
+    used = true;
+    decryptBtn.disabled = true;
+    decryptLabel.textContent = "";
+    decrypt(decryptLabel, MYSTERY, function () {
+      decryptBtn.innerHTML = "";
+      decryptBtn.setAttribute("aria-label", "已解开");
+    });
+  });
+
+  /* ---------- live clock ---------- */
+  var clock = document.getElementById("clock");
+  if (clock) {
+    function pad(n) {
+      return (n < 10 ? "0" : "") + n;
+    }
+    function tick() {
+      var d = new Date();
+      clock.textContent =
+        pad(d.getHours()) + ":" + pad(d.getMinutes()) + ":" + pad(d.getSeconds());
+    }
+    tick();
+    setInterval(tick, 500);
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+  if (prefersReduced || !("IntersectionObserver" in window)) {
+    reveals.forEach(function (el) {
+      el.classList.add("is-in");
+    });
+  } else {
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    reveals.forEach(function (el) {
+      io.observe(el);
+    });
+  }
+
+  /* start the show */
+  typeTagline();
+})();
