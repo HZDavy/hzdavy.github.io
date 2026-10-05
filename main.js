@@ -6,7 +6,7 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- typewriter tagline ---------- */
-  var TAGLINE = "设计与代码兼擅，界与器用并作。";
+  var TAGLINE = "独任设计，主界面，兼图像與排版。";
   var typeEl = document.getElementById("type");
 
   function typeTagline() {
@@ -23,7 +23,7 @@
   }
 
   /* ---------- decrypt reveal ---------- */
-  var MYSTERY = "言尽於此，餘藏於碼與庫中。";
+  var MYSTERY = "言尽於此，餘藏於稿與案中。";
   var decryptBtn = document.getElementById("decrypt");
   var decryptLabel = document.getElementById("decrypt-label");
   var used = false;
