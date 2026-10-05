@@ -6,7 +6,7 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- typewriter tagline ---------- */
-  var TAGLINE = "独任设计，主界面，兼图像與排版。";
+  var TAGLINE = "独りで界面と道具を作る、静かな開発者。";
   var typeEl = document.getElementById("type");
 
   function typeTagline() {
@@ -23,7 +23,7 @@
   }
 
   /* ---------- decrypt reveal ---------- */
-  var MYSTERY = "言尽於此，餘藏於稿與案中。";
+  var MYSTERY = "語り尽くした。残りは、稿と案のあいだに眠る。";
   var decryptBtn = document.getElementById("decrypt");
   var decryptLabel = document.getElementById("decrypt-label");
   var used = false;
@@ -34,7 +34,7 @@
       cb();
       return;
     }
-    var glyphs = "造事在代码文字与缝隙之间_?·";
+    var glyphs = "作り刃の隙間を_?·";
     var len = text.length;
     var round = 0;
     var resolved = 0;
@@ -68,7 +68,7 @@
     decryptLabel.textContent = "";
     decrypt(decryptLabel, MYSTERY, function () {
       decryptBtn.classList.add("is-revealed");
-      decryptBtn.setAttribute("aria-label", "已解");
+      decryptBtn.setAttribute("aria-label", "解かれた");
     });
   });
 
