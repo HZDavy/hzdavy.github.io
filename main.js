@@ -6,7 +6,7 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- typewriter tagline ---------- */
-  var TAGLINE = "独立设计师与开发者，做点小而不坏的软件。";
+  var TAGLINE = "设计与代码兼擅，界与器用并作。";
   var typeEl = document.getElementById("type");
 
   function typeTagline() {
@@ -23,7 +23,7 @@
   }
 
   /* ---------- decrypt reveal ---------- */
-  var MYSTERY = "能留下来的从来不是风格，而是那个刚好能解决的笨办法。";
+  var MYSTERY = "言尽於此，餘藏於碼與庫中。";
   var decryptBtn = document.getElementById("decrypt");
   var decryptLabel = document.getElementById("decrypt-label");
   var used = false;
@@ -68,7 +68,7 @@
     decryptLabel.textContent = "";
     decrypt(decryptLabel, MYSTERY, function () {
       decryptBtn.classList.add("is-revealed");
-      decryptBtn.setAttribute("aria-label", "已解开");
+      decryptBtn.setAttribute("aria-label", "已解");
     });
   });
 
