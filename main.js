@@ -6,7 +6,7 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- typewriter tagline ---------- */
-  var TAGLINE = "造一些安静的、未完成的事物。";
+  var TAGLINE = "独立设计师与开发者，做点小而不坏的软件。";
   var typeEl = document.getElementById("type");
 
   function typeTagline() {
@@ -23,7 +23,7 @@
   }
 
   /* ---------- decrypt reveal ---------- */
-  var MYSTERY = "至于被藏起来的那些，连我自己也不知道答案。";
+  var MYSTERY = "能留下来的从来不是风格，而是那个刚好能解决的笨办法。";
   var decryptBtn = document.getElementById("decrypt");
   var decryptLabel = document.getElementById("decrypt-label");
   var used = false;
