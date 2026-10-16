@@ -702,13 +702,17 @@ main {
   gap: 12px;
 }
 .signals li {
+  transform-style: preserve-3d;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.signals li > a {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: baseline;
   gap: 1.4rem;
   padding: 1.2rem 1.2rem;
-  transform-style: preserve-3d;
-  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: var(--fg);
+  text-decoration: none;
 }
 .signals li.tilt {
   transform: perspective(760px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
@@ -720,6 +724,14 @@ main {
 }
 .signals .sig { font-size: 0.74rem; color: var(--faint); }
 .sig-name { font-family: var(--serif); font-size: clamp(1.05rem, 2.4vw, 1.38rem); }
+.sig-name::after {
+  content: " ↗";
+  font-size: 0.7em;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.signals li:hover .sig-name::after { opacity: 1; }
 .sig-state {
   font-size: 0.66rem;
   letter-spacing: 0.1em;
@@ -966,7 +978,7 @@ main {
   .rail-bottom { font-size: 0.6rem; }
   .log { display: none; }
   .readouts { width: 100%; justify-content: space-between; }
-  .signals li { grid-template-columns: auto 1fr; gap: 0.7rem 1rem; }
+  .signals li > a { grid-template-columns: auto 1fr; gap: 0.7rem 1rem; }
   .signals li .sig-state { grid-column: 2; }
   .channels a { grid-template-columns: 1fr; gap: 0.2rem; }
   .ch-uri { text-align: left; }

@@ -47,12 +47,20 @@
       "notes.line1": "所愿甚多，所成实寡，悉录于此。",
       "notes.line2": "所成之稿，皆泊于 GitHub 之库。",
       "signals.label": "信号 / SIGNALS",
-      "signals.1.name": "PlanMonitor — 自造之工具",
-      "signals.1.state": "已布 · v1.0",
-      "signals.2.name": "记账之器，界面重绘",
-      "signals.2.state": "草稿 · 途中",
-      "signals.3.name": "为器作画与界面",
-      "signals.3.state": "私藏 · 未发",
+      "signals.1.name": "OpenMexia · 智能家居中枢",
+      "signals.1.state": "已布 · 开源",
+      "signals.2.name": "PlanMonitor · 用量之监",
+      "signals.2.state": "已布 · 在线",
+      "signals.3.name": "Foxcam · 摄像头之控",
+      "signals.3.state": "已布 · 在线",
+      "signals.4.name": "OpenCode2Trae · 本机之桥",
+      "signals.4.state": "已布 · 在线",
+      "signals.5.name": "中外建筑师对照总表",
+      "signals.5.state": "已布 · 在线",
+      "signals.6.name": "WORD_FORGE · 文字之炉",
+      "signals.6.state": "已布 · 在线",
+      "signals.7.name": "AtypicalDesignLab · 异构之室",
+      "signals.7.state": "已布 · 在线",
       "channels.label": "通讯 / CHANNELS",
       "promo.close": "关闭",
       "promo.flag": "来讯 / INCOMING",
@@ -109,12 +117,20 @@
       "notes.line1": "所願甚多，所成實寡，悉錄於此。",
       "notes.line2": "所成之稿，皆泊於 GitHub 之庫。",
       "signals.label": "信號 / SIGNALS",
-      "signals.1.name": "PlanMonitor — 自造之工具",
-      "signals.1.state": "已佈 · v1.0",
-      "signals.2.name": "記帳之器，界面重繪",
-      "signals.2.state": "草稿 · 途中",
-      "signals.3.name": "為器作畫與界面",
-      "signals.3.state": "私藏 · 未發",
+      "signals.1.name": "OpenMexia · 智能家居中樞",
+      "signals.1.state": "已佈 · 開源",
+      "signals.2.name": "PlanMonitor · 用量之監",
+      "signals.2.state": "已佈 · 線上",
+      "signals.3.name": "Foxcam · 攝像頭之控",
+      "signals.3.state": "已佈 · 線上",
+      "signals.4.name": "OpenCode2Trae · 本機之橋",
+      "signals.4.state": "已佈 · 線上",
+      "signals.5.name": "中外建築師對照總表",
+      "signals.5.state": "已佈 · 線上",
+      "signals.6.name": "WORD_FORGE · 文字之爐",
+      "signals.6.state": "已佈 · 線上",
+      "signals.7.name": "AtypicalDesignLab · 異構之室",
+      "signals.7.state": "已佈 · 線上",
       "channels.label": "通訊 / CHANNELS",
       "promo.close": "關閉",
       "promo.flag": "來訊 / INCOMING",
@@ -171,12 +187,20 @@
       "notes.line1": "Much wanted, little finished. What remains, stays here.",
       "notes.line2": "Finished drafts sleep in my GitHub repositories.",
       "signals.label": "SIGNALS / TRACES",
-      "signals.1.name": "PlanMonitor — a tool I built myself",
-      "signals.1.state": "Released · v1.0",
-      "signals.2.name": "Ledger app, interface redrawn",
-      "signals.2.state": "Draft · in progress",
-      "signals.3.name": "Imagery and interfaces for tools",
-      "signals.3.state": "Private · unreleased",
+      "signals.1.name": "OpenMexia · smart-home hub",
+      "signals.1.state": "Live · open source",
+      "signals.2.name": "PlanMonitor · usage monitor",
+      "signals.2.state": "Live · online",
+      "signals.3.name": "Foxcam · camera control",
+      "signals.3.state": "Live · online",
+      "signals.4.name": "OpenCode2Trae · local bridge",
+      "signals.4.state": "Live · online",
+      "signals.5.name": "Architects of China & Abroad",
+      "signals.5.state": "Live · online",
+      "signals.6.name": "WORD_FORGE · a textual forge",
+      "signals.6.state": "Live · online",
+      "signals.7.name": "AtypicalDesignLab · design lab",
+      "signals.7.state": "Live · online",
       "channels.label": "CHANNELS / CONTACT",
       "promo.close": "Close",
       "promo.flag": "INCOMING TRANSMISSION",
@@ -233,12 +257,20 @@
       "notes.line1": "望むことは多く、成ったものは少ない。すべてここに残す。",
       "notes.line2": "成った稿は、GitHub の蔵に眠っている。",
       "signals.label": "信号 / SIGNALS",
-      "signals.1.name": "PlanMonitor — 自ら手がけた道具",
-      "signals.1.state": "公開 · v1.0",
-      "signals.2.name": "会計の道具、界面を描き直す",
-      "signals.2.state": "草稿 · 途上",
-      "signals.3.name": "道具に図像と界面を",
-      "signals.3.state": "私有 · 未公開",
+      "signals.1.name": "OpenMexia · スマートホーム中枢",
+      "signals.1.state": "公開 · オープンソース",
+      "signals.2.name": "PlanMonitor · 使用量の監視",
+      "signals.2.state": "公開 · オンライン",
+      "signals.3.name": "Foxcam · カメラ制御",
+      "signals.3.state": "公開 · オンライン",
+      "signals.4.name": "OpenCode2Trae · ローカル架け橋",
+      "signals.4.state": "公開 · オンライン",
+      "signals.5.name": "中外建築家 対照総表",
+      "signals.5.state": "公開 · オンライン",
+      "signals.6.name": "WORD_FORGE · 文字の炉",
+      "signals.6.state": "公開 · オンライン",
+      "signals.7.name": "AtypicalDesignLab · 異形の工房",
+      "signals.7.state": "公開 · オンライン",
       "channels.label": "通信 / CHANNELS",
       "promo.close": "閉じる",
       "promo.flag": "受信 / INCOMING",
@@ -295,12 +327,20 @@
       "notes.line1": "바라는 것은 많고, 이룬 것은 적다. 모두 여기 남긴다.",
       "notes.line2": "완성된 원고는 GitHub 저장소에 잠들어 있다.",
       "signals.label": "신호 / SIGNALS",
-      "signals.1.name": "PlanMonitor — 직접 만든 도구",
-      "signals.1.state": "공개 · v1.0",
-      "signals.2.name": "회계 앱, 인터페이스 재작업",
-      "signals.2.state": "초안 · 진행 중",
-      "signals.3.name": "도구를 위한 도상과 인터페이스",
-      "signals.3.state": "비공개 · 미출시",
+      "signals.1.name": "OpenMexia · 스마트홈 허브",
+      "signals.1.state": "공개 · 오픈소스",
+      "signals.2.name": "PlanMonitor · 사용량 감시",
+      "signals.2.state": "공개 · 온라인",
+      "signals.3.name": "Foxcam · 카메라 제어",
+      "signals.3.state": "공개 · 온라인",
+      "signals.4.name": "OpenCode2Trae · 로컬 브리지",
+      "signals.4.state": "공개 · 온라인",
+      "signals.5.name": "중외 건축가 대조 총표",
+      "signals.5.state": "공개 · 온라인",
+      "signals.6.name": "WORD_FORGE · 문자 용광로",
+      "signals.6.state": "공개 · 온라인",
+      "signals.7.name": "AtypicalDesignLab · 디자인 랩",
+      "signals.7.state": "공개 · 온라인",
       "channels.label": "통신 / CHANNELS",
       "promo.close": "닫기",
       "promo.flag": "수신 / INCOMING",
@@ -621,6 +661,47 @@
         });
       }
     }
+
+    /* 太空垃圾：缓慢漂移、缓缓自转的多边形碎片 */
+    var debris = [];
+    function seedDebris() {
+      var n = Math.max(8, Math.min(20, Math.round((SW * SH) / 76000)));
+      debris = [];
+      for (var i = 0; i < n; i++) {
+        debris.push({
+          x: Math.random() * SW,
+          y: Math.random() * SH,
+          vx: (Math.random() * 2 - 1) * 0.16,
+          vy: (Math.random() * 2 - 1) * 0.16,
+          r: 2.6 + Math.random() * 5.6,
+          rot: Math.random() * Math.PI * 2,
+          vr: (Math.random() * 2 - 1) * 0.0024,
+          sides: Math.random() < 0.55 ? 3 : 4,
+          a: 0.15 + Math.random() * 0.28
+        });
+      }
+    }
+
+    /* 陨石：偶发划过的长尾流星 */
+    var meteors = [];
+    var meteorTimer = 120;
+    function spawnMeteor() {
+      var ang = (0.28 + Math.random() * 0.34) * Math.PI;
+      var sp = 8 + Math.random() * 10;
+      var dx = Math.cos(ang) * sp;
+      var dy = Math.abs(Math.sin(ang)) * sp;
+      if (Math.random() < 0.5) dx = -dx;
+      meteors.push({
+        x: dx > 0 ? -80 : SW + 80,
+        y: Math.random() * SH * 0.7 - 40,
+        vx: dx,
+        vy: dy,
+        len: 100 + Math.random() * 160,
+        life: 1,
+        decay: 0.006 + Math.random() * 0.008
+      });
+    }
+
     function sresize() {
       SW = space.clientWidth;
       SH = space.clientHeight;
@@ -628,6 +709,7 @@
       space.height = SH * sDpr;
       sctx.setTransform(sDpr, 0, 0, sDpr, 0, 0);
       seedStars();
+      seedDebris();
     }
 
     var speed = 0.0016;
@@ -665,6 +747,67 @@
         sctx.lineTo(x1, y1);
         sctx.stroke();
       }
+
+      /* 太空垃圾：漂移并自转的碎片轮廓 */
+      for (var d = 0; d < debris.length; d++) {
+        var db = debris[d];
+        db.x += db.vx;
+        db.y += db.vy;
+        db.rot += db.vr;
+        if (db.x < -24) db.x = SW + 24; else if (db.x > SW + 24) db.x = -24;
+        if (db.y < -24) db.y = SH + 24; else if (db.y > SH + 24) db.y = -24;
+        sctx.save();
+        sctx.translate(db.x, db.y);
+        sctx.rotate(db.rot);
+        sctx.strokeStyle = "rgba(" + palette.fg + "," + db.a.toFixed(3) + ")";
+        sctx.lineWidth = 1;
+        sctx.beginPath();
+        for (var s2 = 0; s2 < db.sides; s2++) {
+          var aa = (s2 / db.sides) * Math.PI * 2;
+          var px = Math.cos(aa) * db.r;
+          var py = Math.sin(aa) * db.r;
+          if (s2 === 0) sctx.moveTo(px, py); else sctx.lineTo(px, py);
+        }
+        sctx.closePath();
+        sctx.stroke();
+        sctx.restore();
+      }
+
+      /* 陨石：带渐隐长尾的流星 */
+      meteorTimer--;
+      if (meteorTimer <= 0) {
+        spawnMeteor();
+        meteorTimer = 130 + Math.random() * 280;
+      }
+      for (var m = meteors.length - 1; m >= 0; m--) {
+        var me = meteors[m];
+        me.x += me.vx;
+        me.y += me.vy;
+        me.life -= me.decay;
+        if (me.life <= 0 || me.x < -180 || me.x > SW + 180 || me.y > SH + 180) {
+          meteors.splice(m, 1);
+          continue;
+        }
+        var mag = Math.sqrt(me.vx * me.vx + me.vy * me.vy) || 1;
+        var tx = me.x - (me.vx / mag) * me.len;
+        var ty = me.y - (me.vy / mag) * me.len;
+        var al = Math.max(0, me.life);
+        var grad = sctx.createLinearGradient(me.x, me.y, tx, ty);
+        grad.addColorStop(0, "rgba(" + palette.accent + "," + (al * 0.95).toFixed(3) + ")");
+        grad.addColorStop(0.35, "rgba(" + palette.fg + "," + (al * 0.42).toFixed(3) + ")");
+        grad.addColorStop(1, "rgba(" + palette.fg + ",0)");
+        sctx.strokeStyle = grad;
+        sctx.lineWidth = 1.8;
+        sctx.beginPath();
+        sctx.moveTo(me.x, me.y);
+        sctx.lineTo(tx, ty);
+        sctx.stroke();
+        sctx.fillStyle = "rgba(" + palette.accent + "," + al.toFixed(3) + ")";
+        sctx.beginPath();
+        sctx.arc(me.x, me.y, 1.7, 0, Math.PI * 2);
+        sctx.fill();
+      }
+
       warpBoost *= 0.93;
       requestAnimationFrame(sframe);
     }
