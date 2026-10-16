@@ -534,13 +534,13 @@
      6. theme
      --------------------------------------------------------- */
   var themeBtn = document.getElementById("theme-toggle");
-  var THEMES = { void: "#04100f", ember: "#120a04" };
+  var THEMES = { paper: "#faf9f5", night: "#181715" };
 
   function applyTheme(theme) {
-    if (!THEMES[theme]) theme = "void";
+    if (!THEMES[theme]) theme = "paper";
     root.setAttribute("data-theme", theme);
     if (themeBtn) {
-      themeBtn.setAttribute("aria-pressed", theme === "ember" ? "true" : "false");
+      themeBtn.setAttribute("aria-pressed", theme === "night" ? "true" : "false");
       themeBtn.setAttribute("title", t(currentLang, "theme.title"));
     }
     if (metaTheme) metaTheme.setAttribute("content", THEMES[theme]);
@@ -549,7 +549,7 @@
 
   if (themeBtn) {
     themeBtn.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "ember" ? "void" : "ember";
+      var next = root.getAttribute("data-theme") === "night" ? "paper" : "night";
       write("hzdavy_theme", next);
       withTransition(function () { applyTheme(next); });
     });
@@ -628,7 +628,7 @@
      --------------------------------------------------------- */
   var space = document.getElementById("space");
   var warpBoost = 0;
-  var palette = { accent: "63,224,200", fg: "217,246,240" };
+  var palette = { accent: "204,120,92", fg: "20,20,19", bg: "250,249,245" };
 
   function hexToRgb(hex) {
     var h = hex.replace("#", "").trim();
@@ -638,10 +638,12 @@
   }
   function readPalette() {
     var cs = getComputedStyle(root);
-    var accent = hexToRgb(cs.getPropertyValue("--accent").trim() || "#3fe0c8");
-    var fg = hexToRgb(cs.getPropertyValue("--fg").trim() || "#d9f6f0");
+    var accent = hexToRgb(cs.getPropertyValue("--accent").trim() || "#cc785c");
+    var fg = hexToRgb(cs.getPropertyValue("--fg").trim() || "#141413");
+    var bg = hexToRgb(cs.getPropertyValue("--bg").trim() || "#faf9f5");
     palette.accent = accent.join(",");
     palette.fg = fg.join(",");
+    palette.bg = bg.join(",");
   }
 
   if (space && !prefersReduced) {
@@ -717,8 +719,7 @@
     function sframe() {
       var cx = SW / 2, cy = SH / 2;
       /* fade trail */
-      sctx.fillStyle = "rgba(4,16,15,0.34)";
-      if (root.getAttribute("data-theme") === "ember") sctx.fillStyle = "rgba(18,10,4,0.34)";
+      sctx.fillStyle = "rgba(" + palette.bg + ",0.34)";
       sctx.fillRect(0, 0, SW, SH);
 
       var v = speed + warpBoost;
@@ -835,7 +836,7 @@
     var rctx = radar.getContext("2d");
     var rDpr = Math.min(window.devicePixelRatio || 1, 2);
     var RW = 0, RH = 0, sweep = 0;
-    var rAccent = "63,224,200";
+    var rAccent = "204,120,92";
 
     function rresize() {
       RW = radar.clientWidth;
@@ -1169,7 +1170,7 @@
   /* ---------------------------------------------------------
      boot
      --------------------------------------------------------- */
-  applyTheme(read("hzdavy_theme") || "void");
+  applyTheme(read("hzdavy_theme") || "paper");
   applyLang(detectLang());
 
   if (boot) finishBoot = runBoot();
