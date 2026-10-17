@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HZDavy</title>
-  <meta id="meta-desc" name="description" content="HZDavy — 独自造界面与工具的开发者。" />
+  <meta id="meta-desc" name="description" content="HZDavy — 独立开发者，造界面，也造工具。" />
   <meta id="meta-theme" name="theme-color" content="#ffffff" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,28 +12,31 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <!-- ---- fullscreen canvas loader (MiSans-style) ---- -->
   <div id="loader" class="loader" aria-hidden="true"><canvas id="loader-canvas"></canvas></div>
+
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
 
   <a class="skip" href="#main" data-i18n="a11y.skip">跳至正文</a>
 
-  <!-- ---- nav : variable-weight links ---- -->
   <header class="nav" id="top">
-    <a class="brand" href="#top">HZDavy</a>
+    <a class="brand" href="#top" data-magnet>HZDavy</a>
     <nav class="nav-links" aria-label="Sections">
-      <a href="#log" data-i18n="nav.log">航志</a>
       <a href="#works" data-i18n="nav.works">作品</a>
+      <a href="#lab" data-i18n="nav.lab">器物</a>
+      <a href="#log" data-i18n="nav.log">航志</a>
       <a href="#contact" data-i18n="nav.contact">通讯</a>
     </nav>
     <div class="nav-tools">
       <div class="langs" role="group" aria-label="Language">
+        <span class="lang-pill" id="lang-pill" aria-hidden="true"></span>
         <button class="lang" type="button" data-set-lang="zh-Hans" title="简体中文">简</button>
         <button class="lang" type="button" data-set-lang="zh-Hant" title="繁體中文">繁</button>
         <button class="lang" type="button" data-set-lang="en" title="English">EN</button>
         <button class="lang" type="button" data-set-lang="ja" title="日本語">日</button>
         <button class="lang" type="button" data-set-lang="ko" title="한국어">한</button>
       </div>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" title="Theme">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" title="Theme" data-magnet>
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <circle class="sun" cx="12" cy="12" r="4.4" />
           <path class="moon" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" />
@@ -43,136 +46,167 @@
   </header>
 
   <main id="main">
-    <!-- ---- marquee strip ---- -->
+    <!-- ---- hero ---- -->
+    <section class="hero">
+      <p class="eyebrow" data-reveal data-i18n="hero.eyebrow">hzdavy // 独立开发 // 纪年 2026</p>
+      <h1 class="hero-title" id="hero-title" aria-label="HZDavy"></h1>
+      <p class="hero-line" data-reveal><span id="type"></span><span class="caret" aria-hidden="true"></span></p>
+      <div class="hero-actions" data-reveal>
+        <button class="btn" id="decrypt" type="button" data-magnet>
+          <span id="decrypt-label" data-i18n="hero.decrypt">解其所余</span>
+          <span class="btn-mark" aria-hidden="true">↗</span>
+        </button>
+        <a class="ghost" href="#works" data-i18n="hero.scroll">↓ 向下</a>
+      </div>
+    </section>
+
     <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee-track"></div></div>
 
-    <!-- ---- hero ---- -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="abox" data-ab>
-        <div class="hero-inner">
-          <p class="eyebrow" data-i18n="hero.eyebrow">hzdavy // 独立开发 // 2026</p>
-          <h1 class="hero-title" id="hero-title" data-reveal>HZDavy</h1>
-          <p class="hero-line" data-reveal>
-            <span id="type"></span><span class="caret" aria-hidden="true"></span>
-          </p>
-          <div class="hero-actions" data-reveal>
-            <button class="btn" id="decrypt" type="button">
-              <span id="decrypt-label" data-i18n="hero.decrypt">解其所余</span>
-              <span class="btn-mark" aria-hidden="true">_</span>
-            </button>
-            <a class="ghost" href="#log" data-i18n="hero.scroll">↓ 启航</a>
-          </div>
-        </div>
-      </div>
-
-      <ul class="stats" data-reveal>
-        <li><b>07</b><span data-i18n="stat.projects">所布之作</span><i>（1）</i></li>
-        <li><b>05</b><span data-i18n="stat.langs">语言文字</span></li>
-        <li><b>2026</b><span data-i18n="stat.since">航行纪年</span></li>
+    <!-- ---- works : bento ---- -->
+    <section class="sec" id="works">
+      <header class="sec-head" data-reveal>
+        <p class="label" data-i18n="works.label">作品 / WORKS</p>
+        <p class="sec-hint" data-i18n="works.hint">悬停，卡片会倾向你。</p>
+      </header>
+      <ul class="bento">
+        <li class="card card-xl" data-reveal data-tilt>
+          <a href="https://hzdavy.github.io/PlanMonitor/" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">02</span><span class="c-tag" data-i18n="works.new">新作</span></span>
+            <span class="c-name">PlanMonitor</span>
+            <span class="c-desc" data-i18n="works.2.name">用量之监</span>
+            <span class="c-foot"><span data-i18n="works.2.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+            <span class="c-art c-art-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </a>
+        </li>
+        <li class="card card-tall" data-reveal data-tilt>
+          <a href="https://hzdavy.github.io/OpenMexia/" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">01</span></span>
+            <span class="c-name">OpenMexia</span>
+            <span class="c-desc" data-i18n="works.1.name">智能家居中枢</span>
+            <span class="c-foot"><span data-i18n="works.1.state">已布 · 开源</span><span class="c-arrow" aria-hidden="true">→</span></span>
+            <span class="c-art c-art-orbit" aria-hidden="true"><i></i><i></i><i></i></span>
+          </a>
+        </li>
+        <li class="card" data-reveal data-tilt>
+          <a href="https://hzdavy.github.io/Foxcam/" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">03</span></span>
+            <span class="c-name">Foxcam</span>
+            <span class="c-desc" data-i18n="works.3.name">摄像头之控</span>
+            <span class="c-foot"><span data-i18n="works.3.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li class="card" data-reveal data-tilt>
+          <a href="https://hzdavy.github.io/OpenCode2Trae/" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">04</span></span>
+            <span class="c-name">OpenCode2Trae</span>
+            <span class="c-desc" data-i18n="works.4.name">本机之桥</span>
+            <span class="c-foot"><span data-i18n="works.4.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li class="card card-wide" data-reveal data-tilt>
+          <a href="https://hzdavy.github.io/zhongwai-jianzhu/" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">05</span></span>
+            <span class="c-name" data-i18n="works.5.title">中外建筑师</span>
+            <span class="c-desc" data-i18n="works.5.name">对照总表</span>
+            <span class="c-foot"><span data-i18n="works.5.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+            <span class="c-art c-art-grid" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="card" data-reveal data-tilt>
+          <a href="https://word-forge-eta.vercel.app" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">06</span></span>
+            <span class="c-name">WORD_FORGE</span>
+            <span class="c-desc" data-i18n="works.6.name">文字之炉</span>
+            <span class="c-foot"><span data-i18n="works.6.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li class="card" data-reveal data-tilt>
+          <a href="https://arch-365.vercel.app" target="_blank" rel="noopener">
+            <span class="c-top"><span class="c-idx">07</span></span>
+            <span class="c-name">AtypicalDesignLab</span>
+            <span class="c-desc" data-i18n="works.7.name">异构之室</span>
+            <span class="c-foot"><span data-i18n="works.7.state">已布 · 在线</span><span class="c-arrow" aria-hidden="true">→</span></span>
+          </a>
+        </li>
       </ul>
+    </section>
+
+    <!-- ---- lab : interactive cards ---- -->
+    <section class="sec" id="lab">
+      <header class="sec-head" data-reveal>
+        <p class="label" data-i18n="lab.label">器物 / LAB</p>
+        <p class="sec-hint" data-i18n="lab.hint">几件小玩意，可以动手。</p>
+      </header>
+      <div class="lab">
+        <article class="card tool tool-field" data-reveal>
+          <p class="t-label" data-i18n="lab.field">字之场 · 移动光标</p>
+          <div class="field" id="field" aria-hidden="true"></div>
+        </article>
+
+        <article class="card tool tool-weight" data-reveal>
+          <p class="t-label"><span data-i18n="lab.weight">字重 · 拖动</span> <output id="weight-out">400</output></p>
+          <p class="weight-sample" id="weight-sample">Aa</p>
+          <input class="range" id="weight-range" type="range" min="100" max="900" step="1" value="400" aria-label="font weight" />
+        </article>
+
+        <article class="card tool tool-clock" data-reveal>
+          <p class="t-label" data-i18n="lab.clock">此刻 · UTC+8</p>
+          <p class="clock" id="clock">00:00<span class="clock-s">:00</span></p>
+          <div class="dial" aria-hidden="true"><span class="dial-hand" id="dial-hand"></span></div>
+        </article>
+
+        <article class="card tool tool-dots" data-reveal>
+          <p class="t-label" data-i18n="lab.dots">点阵 · 点按</p>
+          <div class="dots" id="dots"></div>
+        </article>
+      </div>
     </section>
 
     <!-- ---- log ---- -->
-    <section class="sec" id="log" aria-labelledby="log-title">
-      <p class="sec-tag" data-i18n="log.label" data-reveal>航志 / LOG</p>
-      <div class="abox rev-h" data-ab>
-        <div class="sec-in">
-          <h2 class="lede" id="log-title" data-i18n="log.lede" data-reveal>此处记录所造之物。</h2>
-          <p class="plain" data-i18n="log.line1" data-reveal>所愿甚多，所成实寡。</p>
-          <p class="plain" data-i18n="log.line2" data-reveal>所成之稿，皆泊于 GitHub。</p>
+    <section class="sec" id="log">
+      <header class="sec-head" data-reveal>
+        <p class="label" data-i18n="log.label">航志 / LOG</p>
+      </header>
+      <div class="log">
+        <div class="card log-text" data-reveal>
+          <p class="lede" data-i18n="log.lede">此处记录所造之物。</p>
+          <p data-i18n="log.line1">所愿甚多，所成实寡。</p>
+          <p data-i18n="log.line2">已成之稿，皆泊于 GitHub。</p>
         </div>
+        <ul class="stats">
+          <li class="card" data-reveal><b data-count="7" data-pad="2">00</b><span data-i18n="stat.projects">所布之作</span></li>
+          <li class="card" data-reveal><b data-count="5" data-pad="2">00</b><span data-i18n="stat.langs">语言文字</span></li>
+          <li class="card" data-reveal><b data-count="2026">0000</b><span data-i18n="stat.since">航行纪年</span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- ---- works ---- -->
-    <section class="sec" id="works" aria-labelledby="works-title">
-      <p class="sec-tag" data-i18n="works.label" data-reveal>作品 / WORKS</p>
-      <ul class="works" aria-labelledby="works-title">
-        <li class="abox" data-ab data-reveal>
-          <a href="https://hzdavy.github.io/OpenMexia/" target="_blank" rel="noopener">
-            <span class="w-idx">01</span>
-            <span class="w-name" data-i18n="works.1.name">OpenMexia · 智能家居中枢</span>
-            <span class="w-state" data-i18n="works.1.state">已布 · 开源</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://hzdavy.github.io/PlanMonitor/" target="_blank" rel="noopener">
-            <span class="w-idx">02</span>
-            <span class="w-name" data-i18n="works.2.name">PlanMonitor · 用量之监</span>
-            <span class="w-state" data-i18n="works.2.state">已布 · 在线</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://hzdavy.github.io/Foxcam/" target="_blank" rel="noopener">
-            <span class="w-idx">03</span>
-            <span class="w-name" data-i18n="works.3.name">Foxcam · 摄像头之控</span>
-            <span class="w-state" data-i18n="works.3.state">已布 · 在线</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://hzdavy.github.io/OpenCode2Trae/" target="_blank" rel="noopener">
-            <span class="w-idx">04</span>
-            <span class="w-name" data-i18n="works.4.name">OpenCode2Trae · 本机之桥</span>
-            <span class="w-state" data-i18n="works.4.state">已布 · 在线</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://hzdavy.github.io/zhongwai-jianzhu/" target="_blank" rel="noopener">
-            <span class="w-idx">05</span>
-            <span class="w-name" data-i18n="works.5.name">中外建筑师对照总表</span>
-            <span class="w-state" data-i18n="works.5.state">已布 · 在线</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://word-forge-eta.vercel.app" target="_blank" rel="noopener">
-            <span class="w-idx">06</span>
-            <span class="w-name" data-i18n="works.6.name">WORD_FORGE · 文字之炉</span>
-            <span class="w-state" data-i18n="works.6.state">已布 · 在线</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="https://arch-365.vercel.app" target="_blank" rel="noopener">
-            <span class="w-idx">07</span>
-            <span class="w-name" data-i18n="works.7.name">AtypicalDesignLab · 异构之室</span>
-            <span class="w-state" data-i18n="works.7.state">已布 · 在线</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- ---- character wall on dot grid ---- -->
-    <section class="charwall-sec" aria-hidden="true">
-      <div class="charwall dotgrid" id="charwall"></div>
-    </section>
-
     <!-- ---- contact ---- -->
-    <section class="sec" id="contact" aria-labelledby="contact-title">
-      <p class="sec-tag" data-i18n="contact.label" data-reveal>通讯 / CONTACT</p>
-      <ul class="works contact" aria-labelledby="contact-title">
-        <li class="abox" data-ab data-reveal>
-          <a href="https://github.com/HZDavy" target="_blank" rel="noopener">
-            <span class="w-idx">GH</span>
-            <span class="w-name">github.com/HZDavy</span>
-            <span class="w-state">↗</span>
-          </a>
-        </li>
-        <li class="abox" data-ab data-reveal>
-          <a href="mailto:hyhdavy@163.com">
-            <span class="w-idx">@</span>
-            <span class="w-name">hyhdavy@163.com</span>
-            <span class="w-state">↗</span>
-          </a>
-        </li>
-      </ul>
+    <section class="sec" id="contact">
+      <header class="sec-head" data-reveal>
+        <p class="label" data-i18n="contact.label">通讯 / CONTACT</p>
+      </header>
+      <div class="contact">
+        <button class="card contact-card" id="copy-mail" type="button" data-reveal data-tilt data-mail="hyhdavy@163.com">
+          <span class="c-top"><span class="c-idx">@</span><span class="c-tag" data-i18n="contact.copy">点按复制</span></span>
+          <span class="c-name">hyhdavy@163.com</span>
+        </button>
+        <a class="card contact-card" href="https://github.com/HZDavy" target="_blank" rel="noopener" data-reveal data-tilt>
+          <span class="c-top"><span class="c-idx">GH</span><span class="c-tag">↗</span></span>
+          <span class="c-name">github.com/HZDavy</span>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="foot">
     <span>© 2026 HZDavy</span>
     <span data-i18n="footer.note">不设追踪 · 不留 Cookie · 纯静态</span>
+    <a href="#top" class="ghost" data-i18n="footer.top">↑ 回顶</a>
   </footer>
 
-  <!-- ---- promo ---- -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <div class="promo-mask" id="promo-mask" hidden>
     <div class="promo" role="dialog" aria-modal="true" aria-labelledby="promo-title">
       <button class="promo-close" id="promo-close" type="button" aria-label="关闭" data-i18n-attr="aria-label:promo.close">×</button>
