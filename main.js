@@ -24,13 +24,9 @@
       "works.label": "作品 / WORKS",
       "works.hint": "悬停，卡片会倾向你。",
       "works.new": "新作",
-      "works.1.name": "智能家居中枢", "works.1.state": "已布 · 开源",
-      "works.2.name": "用量之监，悬于屏隅", "works.2.state": "已布 · 在线",
-      "works.3.name": "摄像头之控", "works.3.state": "已布 · 在线",
-      "works.4.name": "本机之桥", "works.4.state": "已布 · 在线",
-      "works.5.title": "中外建筑师", "works.5.name": "对照总表", "works.5.state": "已布 · 在线",
-      "works.6.name": "文字之炉", "works.6.state": "已布 · 在线",
-      "works.7.name": "异构之室", "works.7.state": "已布 · 在线",
+      "works.motedeck.name": "遥控器语音控制电脑", "works.motedeck.state": "已布 · 在线",
+      "works.openmexia.name": "智能家居中枢", "works.openmexia.state": "已布 · 开源",
+      "works.foxcam.name": "摄像头之控", "works.foxcam.state": "已布 · 在线",
       "lab.label": "器物 / LAB",
       "lab.hint": "几件小器，可以动手。",
       "lab.field": "字之场 · 移动光标",
@@ -47,8 +43,8 @@
       "toast.copied": "已复制邮箱",
       "promo.close": "关闭",
       "promo.flag": "来讯 / INCOMING",
-      "promo.desc": "将 Coding Plan 与 Agent Plan 之余量，悬于屏隅。",
-      "promo.meta3": "免费 · AGPL-3.0 · 单档",
+      "promo.desc": "以遥控器语音控制电脑，让遥控器成为麦克风与快捷键。",
+      "promo.meta3": "免费 · GPL-3.0",
       "promo.cta": "免费取用",
       "footer.note": "不设追踪 · 不留 Cookie · 纯静态",
       "footer.top": "↑ 回顶"
@@ -68,13 +64,9 @@
       "works.label": "作品 / WORKS",
       "works.hint": "懸停，卡片會傾向你。",
       "works.new": "新作",
-      "works.1.name": "智慧家居中樞", "works.1.state": "已布 · 開源",
-      "works.2.name": "用量之監，懸於屏隅", "works.2.state": "已布 · 線上",
-      "works.3.name": "攝像頭之控", "works.3.state": "已布 · 線上",
-      "works.4.name": "本機之橋", "works.4.state": "已布 · 線上",
-      "works.5.title": "中外建築師", "works.5.name": "對照總表", "works.5.state": "已布 · 線上",
-      "works.6.name": "文字之爐", "works.6.state": "已布 · 線上",
-      "works.7.name": "異構之室", "works.7.state": "已布 · 線上",
+      "works.motedeck.name": "遙控器語音控制電腦", "works.motedeck.state": "已布 · 線上",
+      "works.openmexia.name": "智慧家居中樞", "works.openmexia.state": "已布 · 開源",
+      "works.foxcam.name": "攝像頭之控", "works.foxcam.state": "已布 · 線上",
       "lab.label": "器物 / LAB",
       "lab.hint": "幾件小器，可以動手。",
       "lab.field": "字之場 · 移動游標",
@@ -91,8 +83,8 @@
       "toast.copied": "已複製郵箱",
       "promo.close": "關閉",
       "promo.flag": "來訊 / INCOMING",
-      "promo.desc": "將 Coding Plan 與 Agent Plan 之餘量，懸於屏隅。",
-      "promo.meta3": "免費 · AGPL-3.0 · 單檔",
+      "promo.desc": "以遙控器語音控制電腦，讓遙控器成為麥克風與快捷鍵。",
+      "promo.meta3": "免費 · GPL-3.0",
       "promo.cta": "免費取用",
       "footer.note": "不設追蹤 · 不留 Cookie · 純靜態",
       "footer.top": "↑ 回頂"
@@ -111,13 +103,9 @@
       "works.label": "WORKS",
       "works.hint": "Hover. The cards lean toward you.",
       "works.new": "New",
-      "works.1.name": "Smart home hub", "works.1.state": "live · open source",
-      "works.2.name": "Plan usage, pinned to the corner", "works.2.state": "live · online",
-      "works.3.name": "Camera control", "works.3.state": "live · online",
-      "works.4.name": "Local bridge", "works.4.state": "live · online",
-      "works.5.title": "Architects", "works.5.name": "China & abroad, side by side", "works.5.state": "live · online",
-      "works.6.name": "Word foundry", "works.6.state": "live · online",
-      "works.7.name": "Heterogeneous room", "works.7.state": "live · online",
+      "works.motedeck.name": "Voice control with your remote", "works.motedeck.state": "live · online",
+      "works.openmexia.name": "Smart home hub", "works.openmexia.state": "live · open source",
+      "works.foxcam.name": "Camera control", "works.foxcam.state": "live · online",
       "lab.label": "LAB",
       "lab.hint": "A few small things to touch.",
       "lab.field": "Type field · move cursor",
@@ -134,8 +122,8 @@
       "toast.copied": "Email copied",
       "promo.close": "Close",
       "promo.flag": "INCOMING",
-      "promo.desc": "Keeps the remainder of your Coding Plan and Agent Plan in the corner of the screen.",
-      "promo.meta3": "Free · AGPL-3.0 · Single file",
+      "promo.desc": "Control your PC by voice with a remote — a mic and shortcut pad in one.",
+      "promo.meta3": "Free · GPL-3.0",
       "promo.cta": "Get it free",
       "footer.note": "No tracking · No cookies · Pure static",
       "footer.top": "↑ Top"
@@ -155,13 +143,9 @@
       "works.label": "作品 / WORKS",
       "works.hint": "触れると、カードがこちらへ傾く。",
       "works.new": "新作",
-      "works.1.name": "スマートホームの中枢", "works.1.state": "公開 · オープンソース",
-      "works.2.name": "残量を、画面の隅に", "works.2.state": "公開 · 稼働中",
-      "works.3.name": "カメラ制御", "works.3.state": "公開 · 稼働中",
-      "works.4.name": "ローカルの橋", "works.4.state": "公開 · 稼働中",
-      "works.5.title": "中外建築家", "works.5.name": "対照総表", "works.5.state": "公開 · 稼働中",
-      "works.6.name": "文字の炉", "works.6.state": "公開 · 稼働中",
-      "works.7.name": "異形の部屋", "works.7.state": "公開 · 稼働中",
+      "works.motedeck.name": "リモコンの音声で操作", "works.motedeck.state": "公開 · 稼働中",
+      "works.openmexia.name": "スマートホームの中枢", "works.openmexia.state": "公開 · オープンソース",
+      "works.foxcam.name": "カメラ制御", "works.foxcam.state": "公開 · 稼働中",
       "lab.label": "道具 / LAB",
       "lab.hint": "小さな道具を、いくつか。",
       "lab.field": "字の場 · カーソルを動かす",
@@ -178,8 +162,8 @@
       "toast.copied": "メールをコピーしました",
       "promo.close": "閉じる",
       "promo.flag": "受信中 / INCOMING",
-      "promo.desc": "Coding Plan と Agent Plan の残量を、画面の隅に吊るす。",
-      "promo.meta3": "無料 · AGPL-3.0 · 単一ファイル",
+      "promo.desc": "リモコンの音声で PC を操作。リモコンがマイクとショートカットに。",
+      "promo.meta3": "無料 · GPL-3.0",
       "promo.cta": "無料で入手",
       "footer.note": "追跡なし · Cookie なし · 完全静的",
       "footer.top": "↑ 上へ"
@@ -199,13 +183,9 @@
       "works.label": "작업 / WORKS",
       "works.hint": "올려 두면, 카드가 당신 쪽으로 기운다.",
       "works.new": "신작",
-      "works.1.name": "스마트홈 허브", "works.1.state": "공개 · 오픈소스",
-      "works.2.name": "남은 사용량을 화면 한쪽에", "works.2.state": "공개 · 운영 중",
-      "works.3.name": "카메라 제어", "works.3.state": "공개 · 운영 중",
-      "works.4.name": "로컬 브리지", "works.4.state": "공개 · 운영 중",
-      "works.5.title": "중외 건축가", "works.5.name": "대조 총표", "works.5.state": "공개 · 운영 중",
-      "works.6.name": "문자 용광로", "works.6.state": "공개 · 운영 중",
-      "works.7.name": "이형의 방", "works.7.state": "공개 · 운영 중",
+      "works.motedeck.name": "리모컨 음성 제어", "works.motedeck.state": "공개 · 운영 중",
+      "works.openmexia.name": "스마트홈 허브", "works.openmexia.state": "공개 · 오픈소스",
+      "works.foxcam.name": "카메라 제어", "works.foxcam.state": "공개 · 운영 중",
       "lab.label": "도구 / LAB",
       "lab.hint": "만져 볼 수 있는 작은 것들.",
       "lab.field": "글자의 장 · 커서 이동",
@@ -222,8 +202,8 @@
       "toast.copied": "이메일을 복사했습니다",
       "promo.close": "닫기",
       "promo.flag": "수신 / INCOMING",
-      "promo.desc": "Coding Plan과 Agent Plan의 남은 양을 화면 한쪽에 띄운다.",
-      "promo.meta3": "무료 · AGPL-3.0 · 단일 파일",
+      "promo.desc": "리모컨으로 PC를 음성 제어. 리모컨이 마이크와 단축키가 됩니다.",
+      "promo.meta3": "무료 · GPL-3.0",
       "promo.cta": "무료로 받기",
       "footer.note": "추적 없음 · 쿠키 없음 · 순수 정적",
       "footer.top": "↑ 맨 위로"
@@ -464,7 +444,7 @@
 
     var items = [
       "HZDavy",
-      "WORKS 07",
+      "WORKS 03",
       "EST. 2026",
       "5 LANGUAGES",
       "NO TRACKING",
@@ -667,36 +647,68 @@
       field.appendChild(s);
       spans.push(s);
     }
-    var card = field.closest(".card");
+    var card = field.closest(".card") || field;
+    var RADIUS = 150;
     var active = false;
     var raf = 0;
+    var weights = new Array(total);
+    var centers = [];
+    var originX = 0, originY = 0;
+    var lastX = -1, lastY = -1;
+
+    // 只读一次几何，避免每帧 60 次 getBoundingClientRect 引发布局抖动
+    function measure() {
+      var fr = field.getBoundingClientRect();
+      originX = fr.left;
+      originY = fr.top;
+      centers.length = 0;
+      for (var i = 0; i < total; i++) {
+        var r = spans[i].getBoundingClientRect();
+        centers.push([r.left + r.width / 2 - originX, r.top + r.height / 2 - originY]);
+      }
+    }
+
+    function setWeight(i, w) {
+      if (weights[i] === w) return;
+      weights[i] = w;
+      spans[i].style.fontVariationSettings = '"wght" ' + w;
+      spans[i].classList.toggle("is-hot", w >= 700);
+    }
 
     function paint() {
       raf = 0;
-      spans.forEach(function (s) {
-        var w = 100, hot = false;
-        if (active) {
-          var r = s.getBoundingClientRect();
-          var d = Math.hypot(mouse.x - (r.left + r.width / 2), mouse.y - (r.top + r.height / 2));
-          var k = Math.max(0, 1 - d / 150);
-          w = Math.round(100 + k * 800);
-          hot = k > 0.72;
-        }
-        s.style.fontVariationSettings = '"wght" ' + w;
-        s.style.fontWeight = w;
-        s.classList.toggle("is-hot", hot);
-      });
+      if (!active || !centers.length) return;
+      if (mouse.x === lastX && mouse.y === lastY) return;
+      lastX = mouse.x;
+      lastY = mouse.y;
+      var mx = mouse.x - originX;
+      var my = mouse.y - originY;
+      for (var i = 0; i < total; i++) {
+        var c = centers[i];
+        var d = Math.hypot(mx - c[0], my - c[1]);
+        // 量化到 50 一档，减少无意义的字重写入
+        var w = d < RADIUS ? 100 + Math.round((1 - d / RADIUS) * 16) * 50 : 100;
+        setWeight(i, w);
+      }
     }
     function queue() { if (!raf) raf = requestAnimationFrame(paint); }
 
-    (card || field).addEventListener("pointermove", function (e) {
-      mouse.x = e.clientX; mouse.y = e.clientY;
-      active = true; queue();
+    card.addEventListener("pointerenter", measure);
+    card.addEventListener("pointermove", function () {
+      if (!active) active = true;
+      if (!centers.length) measure();
+      queue();
     });
-    (card || field).addEventListener("pointerleave", function () { active = false; queue(); });
+    card.addEventListener("pointerleave", function () {
+      active = false;
+      lastX = lastY = -1;
+      for (var i = 0; i < total; i++) setWeight(i, 100);
+    });
+    window.addEventListener("resize", function () { if (active) measure(); }, { passive: true });
     field.addEventListener("click", function (e) {
       if (e.target.tagName !== "SPAN") return;
       e.target.textContent = FIELD_POOL[Math.floor(Math.random() * FIELD_POOL.length)];
+      measure();
     });
   }
 
